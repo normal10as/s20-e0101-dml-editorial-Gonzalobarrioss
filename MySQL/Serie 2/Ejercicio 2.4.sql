@@ -1,7 +1,5 @@
 use editorial;
 
-SELECT nombre,inicial_segundo_nombre,apellido
-from empleados,editoriales
-WHERE editoriales.editorial_id = empleados.editorial_id
-AND editorial_nombre between 'Lucerne Publishing' AND 'New Moon Books';
-
+SELECT almacen_id,numero_orden,fecha_orden,titulo
+FROM ventas,titulos
+WHERE ventas.titulo_id = titulos.titulo_id AND almacen_id LIKE '7%';

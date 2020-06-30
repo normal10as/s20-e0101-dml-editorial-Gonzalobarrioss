@@ -1,6 +1,5 @@
 use editorial
 go
 
-select distinct almacen_nombre
-from almacenes,ventas
-where almacenes.almacen_id = ventas.almacen_id
+select distinct pais
+from editoriales

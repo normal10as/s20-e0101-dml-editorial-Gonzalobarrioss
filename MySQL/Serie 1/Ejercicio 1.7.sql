@@ -1,6 +1,6 @@
 use editorial;
 
-select distinct pais
-from editoriales;
+select distinct autor_nombre
+from autores;
 
 

@@ -1,7 +1,6 @@
 use editorial
 go
 
-SELECT almacen_id,numero_orden,cantidad
-FROM ventas,titulos
-WHERE titulo = 'Prolonged Data Deprivation: Four Case Studies' 
-AND year(fecha_orden) = 2013 and MONTH(fecha_orden) = 05 and DAY(fecha_orden) = 29
+SELECT nombre, apellido, cargo_id, nivel_cargo
+FROM empleados
+WHERE cargo_id between 10 AND 13 or nivel_cargo > 100

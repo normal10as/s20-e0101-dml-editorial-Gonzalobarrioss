@@ -1,6 +1,7 @@
 use editorial
 go
 
-SELECT titulo,editorial_nombre
+SELECT titulo_id,titulo,editorial_nombre
 FROM titulos,editoriales
-WHERE editorial_nombre != 'Algodata Infosystems'
+WHERE titulos.editorial_id = editoriales.editorial_id AND
+precio IS null

@@ -1,5 +1,4 @@
-use editorial
-go
+use editorial;
 
 SELECT titulo,almacen_nombre,fecha_orden,numero_orden,cantidad
 FROM titulos, ventas, almacenes
@@ -8,4 +7,4 @@ OR titulo =  'The Psychology of Computer Cooking'
 OR titulo =  'Emotional Security: A New Algorithm'
 AND ventas.almacen_id = almacenes.almacen_id
 AND ventas.titulo_id = titulos.titulo_id
-ORDER BY titulo
+ORDER BY titulo;

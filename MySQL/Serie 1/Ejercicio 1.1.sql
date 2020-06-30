@@ -1,4 +1,5 @@
 use editorial;
 
  SELECT *
- FROM empleados;
+ FROM cargos;
+ 

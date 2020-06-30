@@ -1,6 +1,6 @@
 use editorial
 go
 
-SELECT tipo_descuento,cantidad_minima,descuento
-FROM descuentos
-WHERE cantidad_minima IS NOT NULL
+SELECT titulo,editorial_nombre
+FROM titulos,editoriales
+WHERE editorial_nombre != 'Algodata Infosystems'
